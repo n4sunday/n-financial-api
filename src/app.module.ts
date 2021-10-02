@@ -6,6 +6,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { Pet } from './pets/pet.entity';
 import { PetsController } from './pets/pets.controller';
+
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -13,10 +14,11 @@ import { PetsController } from './pets/pets.controller';
       type: 'mongodb',
       url: 'mongodb+srv://root:hardc0deX@finxcluster.epdly.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
       database: 'finxCluster',
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      entities: [Pet],
       ssl: true,
       useUnifiedTopology: true,
       useNewUrlParser: true,
+      logging: true,
       j: true,
     }),
     TypeOrmModule.forFeature([Pet]),
