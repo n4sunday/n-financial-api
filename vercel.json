@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "env": {
-  },
+  "env": {},
   "builds": [
     {
       "src": "src/main.ts",
