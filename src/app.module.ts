@@ -10,6 +10,7 @@ import { PetsController } from './pets/pets.controller';
 @Module({
   imports: [
     ConfigModule.forRoot(),
+
     TypeOrmModule.forRoot({
       type: 'mongodb',
       url: 'mongodb+srv://root:hardc0deX@finxcluster.epdly.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
