@@ -17,6 +17,7 @@ import { PetsController } from './pets/pets.controller';
       ssl: true,
       useUnifiedTopology: true,
       useNewUrlParser: true,
+      j: true,
     }),
     TypeOrmModule.forFeature([Pet]),
   ],
